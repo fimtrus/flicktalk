@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">바로톡</string>
+    <string name="must_take_picture">사진을 찍어주세요.</string>
+    <string name="touch_screen_for_focus">화면을 터치하여 포커스를 맞춰 주세요.</string>
+    
+    <string name="input_title">문구를 입력해주세요.</string>
+
+</resources>

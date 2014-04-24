@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fimtrus="http://schemas.android.com/apk/res/com.fimtrus.flicktalk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.fimtrus.flicktalk.view.MyCameraSurface
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/button_change_camera"
+            android:layout_width="87.7dp"
+            android:layout_height="43.3dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16.7dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_camera_change" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="16.7dp"
+            android:layout_marginRight="16.7dp" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/button_capture"
+                    android:layout_width="87.7dp"
+                    android:layout_height="43.3dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_capture" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/button_gallery"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_gallery"
+                android:padding="3.5dp"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/button_katalk"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_kakao" />
+
+            <com.fimtrus.flicktalk.view.OutlineTextView
+                android:id="@+id/outlineTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_above="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:text=" "
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:singleLine="false"
+                fimtrus:textStroke="true"
+                fimtrus:textStrokeColor="#000000"
+                fimtrus:textStrokeWidth="7.0" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
