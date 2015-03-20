@@ -1,0 +1,1 @@
+One touch send to kakao.
